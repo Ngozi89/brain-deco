@@ -1,3 +1,49 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
 body {
-    background-color: aqua;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lota", sans-serif;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    position: absolute;
+    width: 75%;
+    height: 680px;
+    background: rgb(13, 128, 173);
+    color: white;
+    top: 10%;
+    left: 12%;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-size: 160%;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 70px;
+    margin-left: 430px;
+}
+
+.heading2 {
+    margin-left: 420px;
+    margin-top: 15px;
+}
+
+.logo {
+    margin-top: 70px;
+    margin-left: 310px;
+}
+
+.start-btn{
+    position: relative;
+    margin-top: 70px;
+    margin-left: 510px;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 20%;
+    height: 40px;
 }
