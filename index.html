@@ -42,11 +42,11 @@
                       </p>
                      
                       <p class="game_info">
-                        2. You have <span>10 seconds</span> to choose your prefarred answer.
+                        2. You have <span>10 seconds</span> to read the question and choose your prefarred answer.
                       </p>
                       
                       <p class="game_info">
-                        3. Any answer choose can not be changed.
+                        3. Any answer you choose can not be changed.
                       </p>
                       
                       <p class="game_info">
@@ -72,7 +72,7 @@
                   </div>
                 </div>
         <!-- Set Timer -->
-        <div class="quiz_box">
+        <div class="container text-center quiz_box">
           <header>
             <div class="title">Brain Deco</div>
             <div class="timer">
@@ -82,32 +82,40 @@
             <!-- Timeline -->
             <div class="time_line"></div>
           </header>
+
           <!-- Game questions and answers -->
-          <div class="que_test">Questions</div>
+          <div class="que_ans">
+          <div class="que_test">What country has the highest life expectancy?</div>
           <br>
           <!-- Options -->
           <div class="option_list">
             <div class="option">
-              <span>1</span>
+              <span>United State</span>
               <div class="icon tick"><i class="fas fa-check"></i></div>
             </div>
             <div class="option">
-              <span>2</span>
-              <div class="icon tick"><i class="fas fa-check"></i></div>
+              <span>Italy</span>
+              <div class="icon cross"><i class="fas fa-times"></i></div>
             </div>
             <div class="option">
-              <span>3</span>
-              <div class="icon tick"><i class="fas fa-check"></i></div>
+              <span>Malaysia</span>
             </div>
             <div class="option">
-              <span>4</span>
-              <div class="icon tick"><i class="fas fa-check"></i></div>
+              <span>Hong Kong</span>
             </div>
           </div>
+        </div>
           <!-- End Options -->
 
+          <!-- Footer/total question -->
+          <footer>
+            <div class="total-question"></div>
+            <span><p>1</p>of<p>20</p>Questions</span>
+            <button class="next_btn">Next Que</button>
+          </footer>
         </div>
-
+<!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/a6f48824c3.js" crossorigin="anonymous"></script>
 <!-- JS -->
     <script src="./assets/js/script.js"></script>
 </body>
