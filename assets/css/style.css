@@ -9,16 +9,27 @@ body {
     overflow-x: hidden;
 }
 
-.container-fluid {
-    width: 100%;
-    height: 480px;
-    background: rgb(13, 128, 173);
-    color: white;
-    top: 10%;
+.brain {
+    color: #d30707;
 }
 
-.heading {
+.deco {
+    color: #252525;
+}
+
+.start_game {
+    position: relative;
+    width: 90%;
+    height: 480px;
+    background: #d30707;
+    color: white;
+    margin-top: 110px;
+    margin-left: 20px;
+}
+
+.heading, .heading2 {
     margin-top: 30px;
+    font-size: 25px;
 }
 .logo {
     width: 80%;
@@ -30,6 +41,53 @@ body {
 .start-btn {
     margin-left: 120px;
     margin-top: 50px;
+    transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+    background: #252525;
+    color: #fff;
+}
+
+.game_info_list {
+    position: absolute;
+    width: 90%;
+    height: 780px;
+    background: #d30707;
+    color: white;
+    margin-top: 110px;
+    margin-left: 20px;
+}
+
+.game_info_list img {
+    width: 30vh;
+    margin-left: 45px;
+}
+
+.game_info {
+    padding: 1px;
+    text-align: left;
+    margin-top: 10%;
+}
+
+.game_info_list .buttons {
+    margin-left: 70px;
+    border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* Hover button */
+
+.buttons button.exit:hover {
+    background: #d30707;
+    color: #fff;
+}
+
+.buttons button.continue:hover {
+    background: #08ac16;
+    color: #fff;
 }
 
 .info_box {
@@ -63,10 +121,6 @@ body {
     padding-top: 10px;
 }
 
-.buttons {
-    margin-top: 60px;
-}
-
 /* Hover button */
 
 .buttons button.exit:hover {
@@ -79,14 +133,13 @@ body {
 
 /* Quiz box area */
 .quiz_box {
-    position: absolute;
-    top: 64%;
+    width: 100%;
+    height: 1150px;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 1120px;
     transform: translate(-50%, -50%);
-    background: rgb(226, 7, 18);
+    background: rgb(212, 26, 236);
     color: white;
     transition: all 0.3s ease;
 }
@@ -153,14 +206,14 @@ body {
 }
 
 /* Style Quiz questuin  and Answer section */
-.quiz_box .que_ans {
+.quiz_box .que_ans{
     background: #daa2a2;
-    
 }
 
-.quiz_box .que_ans .question_text {
-    font-size: 130%;
+.quiz_box .que_ans .que_test {
+    font-size: 80%;
     font-weight: 600;
+    margin-right: 80px;
 }
 
 .quiz_box .option_list {
@@ -237,88 +290,104 @@ footer button .next_btn {
 footer .next_btn:hover {
     background: #29c41b;
 }
+
+/* Media query for tablets and larger (750 px and up) */
+@media screen and (min-width: 750px) {
+    .start_game {
+        width: 70%;
+        height: 580px;
+        background: #d30707;
+        color: white;
+        margin-top: 110px;
+        margin-left: 120px;
+    }
+
+    .logo {
+        width: 70%;
+        height: 200px;
+        margin-top: 40px;
+        margin-left: 65px;
+    }
+    
+    .start-btn {
+        margin-left: 220px;
+    }
+
+    .game_info_list {
+        width: 90%;
+        height: 1280px;
+        margin-top: 110px;
+        margin-left: 20px;
+    }
+    
+    .game_info_list img {
+        width: 30vh;
+        margin-left: 205px;
+    }
+    
+    .game_info {
+        font-size: 28px;
+        margin: 30px;
+        padding: 1px;
+    }
+    
+    .game_info_list .buttons {
+        margin-left: 200px;
+    }
+
+}
+
 /* Media query for tablets and larger (1200 px and up) */
 @media screen and (min-width: 1200px) {
 
-    .container-fluid {
-        width: 75%;
-        height: 680px;
-        background: rgb(13, 128, 173);
-        color: white;
-        top: 10%;
-        left: 12%;
+    .start_game {
+        width: 60vw;
+        margin-left: 20%;
     }
 
     .heading {
-        text-transform: uppercase;
-        font-size: 160%;
-        text-align: center;
-        letter-spacing: 2px;
+        font-size: 200%;
         margin-top: 70px;
-        margin-left: 430px;
     }
     
     .heading2 {
-        margin-left: 420px;
-        margin-top: 15px;
+        margin-left: 230px;
     }
     
     .logo {
         width: 70%;
         height: 230px;
         margin-top: 70px;
-        margin-left: 310px;
+        margin-left: 230px;
     }
     
     .start-btn{
         position: relative;
         margin-top: 70px;
-        margin-left: 510px;
-        transition: all 0.3s ease;
-        text-align: center;
+        margin-left: 410px;
         width: 20%;
         height: 40px;
     }
 
-    .info_box {
-        position: absolute;
-        width: 90%;
-        height: 750px;
-        left: 50%;
-        top: 52%;
-        transform: translate(-50%, -50%);
-        background: rgb(212, 26, 236);
-        color: white;
-        transition: all 0.3s ease;
+    .game_info_list {
+        width: 65%;
+        height: 700px;
+        margin-top: 150px;
+        margin-left: 280px;
     }
-
-    .info_box .game_info {
-        width: 100%;
-        font-size: 95%;
-        align-items: center;
-        justify-content: center;
+    
+    .game_info_list img {
+        width: 30vh;
+        margin-left: 365px;
     }
-
-    .info_box .game_info1 {
-        margin-left: 640px;
-        margin-top: 70px;
+    
+    .game_info {
+        font-size: 20px;
+        margin: 30px;
+        padding: 1px;
     }
-
-    .info_box .game-img{
-        width: 30vw;
-        margin-left: 40px;
-        margin-top: 80px;
-    }
-
-    .info_box .game_info {
-        font-size: 110%;
-        position: relative;
-        margin-left: 230px;
-        bottom: 330px;
-
-    }
-
-    .buttons {
-        margin-top: 45px;
+    
+    .game_info_list .buttons {
+        margin-left: 400px;
     }
 }
