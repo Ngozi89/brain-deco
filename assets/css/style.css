@@ -38,6 +38,13 @@ body {
     margin-left: 35px;
 }
 
+.game_info_list.activeInfo {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 .start-btn {
     margin-left: 120px;
     margin-top: 50px;
@@ -51,12 +58,15 @@ body {
 
 .game_info_list {
     position: absolute;
-    width: 90%;
+    width: 95%;
     height: 780px;
     background: #d30707;
     color: white;
-    margin-top: 110px;
-    margin-left: 20px;
+    margin-top: 480px;
+    margin-left: 195px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
 }
 
 .game_info_list img {
@@ -99,6 +109,9 @@ body {
     margin-top: 90px;
     margin-left: 0px;
     background: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
     transition: all 0.3s ease;
 }
 
@@ -384,8 +397,8 @@ footer .next_btn:hover {
     .game_info_list {
         width: 65%;
         height: 700px;
-        margin-top: 150px;
-        margin-left: 280px;
+        margin-top: 499px;
+        margin-left: 780px;
     }
     
     .game_info_list img {
