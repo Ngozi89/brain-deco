@@ -38,7 +38,8 @@ body {
     margin-left: 35px;
 }
 
-.game_info_list.activeInfo {
+.game_info_list.activeInfo,
+.quiz_box.activeQuiz {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -67,6 +68,7 @@ body {
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
 }
 
 .game_info_list img {
@@ -84,6 +86,7 @@ body {
     margin-left: 70px;
     border-radius: 5px;
     border-radius: 5px;
+    outline: none;
     cursor: pointer;
 
 }
