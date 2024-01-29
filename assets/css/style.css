@@ -253,6 +253,9 @@ footer button {
     margin-top: 30px;
     width: 30%;
     height: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 footer button:hover{
@@ -262,6 +265,80 @@ footer button:hover{
 
 footer .next_btn:hover {
     background: #29c41b;
+}
+
+/* Quiz Result */
+.result_box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: black;
+    color: #fff;
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.result_box .result_icon {
+    font-size: 90px;
+    color: #ffff00;
+}
+
+.result_box .complete_quiz {
+    font-size: 120%;
+    font-weight: 600;
+}
+
+.result_box .score_text span {
+    display: flex;
+    font-size: 110%;
+    font-weight: 400;
+}
+
+.score_text span p {
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+.result_box .buttons {
+    display: flex;
+    margin: 20px 0;
+}
+
+.result_box .buttons button {
+    font-size: 90%;
+    font-weight: 600;
+    height: 30px;
+    margin: 0 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.result_box .buttons .continue {
+    background: yellow;
+    font-weight: 800;
+}
+
+.buttons .continue:hover {
+    background: #fff;
+}
+
+.buttons .exit:hover {
+    background: #94948c;
 }
 
 /* Media query for tablets and larger (750 px and up) */
@@ -423,8 +500,12 @@ footer .next_btn:hover {
     .quiz_box {
         width: 80%;
         height: 800px;
-        margin-left: 210px;
-        margin-top: 130px;
+        margin-left: 830px;
+        margin-top: 580px;
+    }
+
+    .quiz_box .que_ans {
+        height: 600px;
     }
 
     .total-question span {
