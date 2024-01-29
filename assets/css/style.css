@@ -106,11 +106,11 @@ body {
 /* Quiz box area */
 .quiz_box {
     position: absolute;
-    width: 100%;
+    width: 95%;
     height: 830px;
     color: #252525;
-    margin-top: 90px;
-    margin-left: 0px;
+    margin-top: 500px;
+    margin-left: 190px;
     background: #fff;
     opacity: 0;
     pointer-events: none;
